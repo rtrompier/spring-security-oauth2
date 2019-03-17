@@ -1,0 +1,16 @@
+server:
+  port: 8082
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://remy-trompier.ch:9000/auth/realms/test
+
+logging:
+  level:
+    ROOT: INFO
+    org.springframework.security: DEBUG
+    org.springframework.web.filter.CommonsRequestLoggingFilter: DEBUG  
+
+debug: true       
